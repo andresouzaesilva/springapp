@@ -2,4 +2,5 @@ ports:
   - port: 8080
 tasks:
   - init: mysql < aluguel.sql
+  - init: ./mvnw install -DskipTests=false
 image: gitpod/workspace-mysql
